@@ -1,7 +1,8 @@
 #include <iostream>
 #include "mcd.h"
+using namespace std;
 
 int main() {
-    std::cout << "Ejercicio 01/04\n" << std::endl;
+    cout << mcd(167,501) << endl;
     return 0;
 }

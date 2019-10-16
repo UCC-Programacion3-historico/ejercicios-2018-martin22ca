@@ -1,13 +1,14 @@
-#ifndef HASHMAP_H
-#define HASHMAP_H
+#ifndef ARBOLBINARIO_H
+#define ARBOLBINARIO_H
 
 #include "NodoArbol.h"
 
 template<class T>
 class ArbolBinario {
 private:
-
+    NodoArbol<T>*raiz;
 public:
+
     ArbolBinario();
 
     void put(T dato);
@@ -27,6 +28,9 @@ public:
     bool esVacio();
 
     void print();
+
+private:
+    void put(T dato, NodoArbol<T>*raiz *r);
 
 };
 
@@ -71,7 +75,7 @@ T ArbolBinario<T>::search(T dato) {
  */
 template<class T>
 void ArbolBinario<T>::put(T dato) {
-
+    put(dato , raiz);
 }
 
 
@@ -79,6 +83,7 @@ void ArbolBinario<T>::put(T dato) {
  * Elimina un dato del árbol
  * @param clave Clave para identificar el nodo a borrar
  */
+
 template<class T>
 void ArbolBinario<T>::remove(T dato) {
 
@@ -131,4 +136,4 @@ void ArbolBinario<T>::print() {
 }
 
 
-#endif //HASHMAP_H
+#endif // ARBOLBINARIO-H
